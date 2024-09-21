@@ -1,14 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+    <!-- Include jQuery (Select2 depends on jQuery) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Include Select2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
 </head>
+
 <body>
+    <nav id="header">
 
+        <img id="logo" src="logo.png" alt="">
+        <span id="title"> Metro Staitons</span>
 
-    <script src="algorithm2.js"></script>
-    
+    </nav>
+
+    <div id="routeContainer">
+
+        <div id="routeTitle">
+            <div>اعرف تفاصيل رحلتك</div>
+            <div>دخل المحطات و هتعرف تفاصيل رحلتك و خط السير</div>    
+        </div>
+
+        <select id="current-station" style="width: 50%;;">
+            <option></option> <!-- This empty option is needed for the placeholder -->
+
+          </select>
+
+        <select id="destination-station" style="width: 50%;">
+            <option></option> <!-- This empty option is needed for the placeholder -->
+
+        </select>
+
+        <input type="button" value="عرفني" id="routeButton">
+    </div>
+
+    <script src="algorithm.js"></script>
+
 </body>
+
 </html>
